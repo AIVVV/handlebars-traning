@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Handlebars template</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <h1>Games of Thrones</h1>
+        <ul class="character-list-container"></ul>
+        <script id="character-template" type="text/x-handlebars-template">
+            {{#each characters}}
+            <li class="character">
+                <img src="assets/{{shortcode}}.jpg" alt="">
+                <h2>{{name}}</h2>
+                <p>Actor: {{actor}}</p>
+                <p>House: {{house}}</p>
+                {{#if location}}
+                <p>Whereadouns: {{location}}</p>{{/if}} 
+                {{#unless location}}<p>Whereadouns are unknown</p>{{/unless}}
+            </li>
+            {{/each}}
+        </script>
+    </div>
+</body>
+<script type="" src="node_modules/jquery/dist/jquery.min.js"></script>
+<script type="" src="node_modules/handlebars/dist/handlebars.min.js"></script>
+<script type="" src="script.js"></script>
+
+</html>

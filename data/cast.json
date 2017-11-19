@@ -1,0 +1,44 @@
+{
+    "characters": [
+    {
+        "name": "Jon Snow",
+        "shortcode": "jon-snow",
+        "actor": "Kit Harrington",
+        "house": "Stark",
+        "location": "The Wall"
+    },
+    {
+        "name": "Tyrion Lannister",
+        "shortcode": "tyrion",
+        "actor": "Peter Dinklage",
+        "house": "Lannister",
+        "location": undefined
+    },
+    {
+        "name": "Brienne of Tarth",
+        "shortcode": "brienne",
+        "actor": "Gwendoline Christie",
+        "house": "Clegane",
+        "location": null
+    },
+    {
+        "name": "Eddard Stark",
+        "shortcode": "ned-stark",
+        "actor": "Sean Bean",
+        "house": "Stark"
+    },
+    {
+        "name": "Sandor Clegane",
+        "shortcode": "the-hound",
+        "actor": "Rory McCann",
+        "house": "Clegane",
+        "location": false
+    },
+    {
+        "name": "Daenerys Targaryen",
+        "shortcode": "dany",
+        "actor": "Emilia Clarke",
+        "house": "Targaryen",
+        "location": "Mereen"
+    }, ]
+}

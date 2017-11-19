@@ -1,0 +1,19 @@
+{
+  "name": "handlebars-traning",
+  "version": "1.0.0",
+  "description": "Handlebars examples for learning mastering the tool",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Angel Ivanov",
+  "license": "ISC",
+  "dependencies": {
+    "handlebars": "^4.0.11",
+    "jquery": "^3.2.1"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-connect": "^5.0.0"
+  }
+}
