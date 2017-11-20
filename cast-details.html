@@ -15,21 +15,7 @@
         <script id="character-template" type="text/x-handlebars-template">
             <div class="character clearfix">
                 <img src="assets/{{shortcode}}.jpg" alt="">
-                <div class="character-details">
-                     <h2>{{name}}</h2>
-                    {{formatName name house.seat}}
-                    <p>{{formatPhoneNumber house.phone}}</p>
-                    <p>Actor: {{actor}}</p>
-                    {{#with house}} 
-                    {{#if name}}<p>House: {{#makeBold}}{{name}}{{/makeBold}}</p>{{/if}} 
-                    {{#if seat}}<p>Seat: {{seat}}</p>{{/if}} 
-                    {{#if words}}<p>Words: {{words}}</p>{{/if}} 
-                    {{/with}} 
-                    {{#if location}}<p>Whereadouns: {{#toLower}}{{location}}{{/toLower}}</p>{{/if}} 
-                    {{#unless location}}
-                    <p>Whereadouns are unknown</p>
-                    {{/unless}}
-                </div>
+                {{> characterDetailsPartial}}
                 <a href="index.html" class="button view-details">Back</a>
             </div>
             <div class="character-bio-container">

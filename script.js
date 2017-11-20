@@ -30,14 +30,25 @@ Handlebars.registerHelper('toLower', function(options) {
 });
 
 $(document).ready(function() {
-
     var characterTemplate = $("#character-template").html();
     var compiledCharacterTemplate = Handlebars.compile(characterTemplate);
     var characterId = getParameterByName("id");
 
     $.ajax({
         type: "GET",
-        url: "../data/cast.json",
+        url: "./character-details-partial.html",
+        success: function(charDetailsPartial) {
+            $("body").append(charDetailsPartial);
+            Handlebars.registerPartial("characterDetailsPartial", $("#character-details-partial").html());
+        },
+        error: function(err) {
+            console.log(err);
+        }
+    });
+
+    $.ajax({
+        type: "GET",
+        url: "./data/cast.json",
         success: function(cast) {
             if ($("body").hasClass("page-cast-details")) {
                 $(".character-list-container").html(compiledCharacterTemplate(cast.characters[characterId]));
@@ -49,9 +60,4 @@ $(document).ready(function() {
             console.log(err);
         }
     });
-
-    // $(".character-list-container").on("click",".view-details", function(e) {
-    //     e.preventDefault();
-    //     console.log('button clicked');
-    // });
 });

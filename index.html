@@ -12,27 +12,14 @@
     <div class="wrapper">
         <h1>Games of Thrones</h1>
         <ul class="character-list-container"></ul>
+
         <script id="character-template" type="text/x-handlebars-template">
             {{#each characters}}
-            <li class="character clearfix">
-                <img src="assets/{{shortcode}}.jpg" alt="">
-                <div class="character-details">
-                    <h2>{{name}}</h2>
-                    {{formatName name house.seat}}
-                    <p>{{formatPhoneNumber house.phone}}</p>
-                    <p>Actor: {{actor}}</p>
-                    {{#with house}} 
-                    {{#if name}}<p>House: {{#makeBold}}{{name}}{{/makeBold}}</p>{{/if}} 
-                    {{#if seat}}<p>Seat: {{seat}}</p>{{/if}} 
-                    {{#if words}}<p>Words: {{words}}</p>{{/if}} 
-                    {{/with}} 
-                    {{#if location}}<p>Whereadouns: {{#toLower}}{{location}}{{/toLower}}</p>{{/if}} 
-                    {{#unless location}}
-                    <p>Whereadouns are unknown</p>
-                    {{/unless}}
-                </div>
-                <a href="cast-details.html?id={{@index}}" class="button view-details">View Details &#8674;</a>
-            </li>
+                <li class="character clearfix">
+                    <img src="assets/{{shortcode}}.jpg" alt="">
+                    {{> characterDetailsPartial}}
+                    <a href="cast-details.html?id={{@index}}" class="button view-details">View Details &#8674;</a>
+                </li>
             {{/each}}
         </script>
     </div>
