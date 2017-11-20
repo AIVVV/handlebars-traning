@@ -4,41 +4,81 @@
         "name": "Jon Snow",
         "shortcode": "jon-snow",
         "actor": "Kit Harrington",
-        "house": "Stark",
-        "location": "The Wall"
+        "house":
+        {
+            "name": "Stark",
+            "seat": "Winterfell",
+            "words": "Winter is coming",
+            "phone": 5551231234
+        },
+        "location": "The Wall",
+        "bio": "Jon Snow, born Aegon Targaryen, is the son of Lyanna Stark and Rhaegar Targaryen, the late Prince of Dragonstone. From infancy, Jon is presented as the bastard son of Lord Eddard Stark, Lyanna's brother, and raised by Eddard alongside his lawful children at Winterfell but his true parentage is kept secret from everyone, including Jon himself. In order to escape his bastard status, Jon joins the Night's Watch and is eventually chosen as Lord Commander. However, he is later murdered in a mutiny and resurrected by the Red Priestess Melisandre. Freed from his Night's Watch vows, Jon joins his cousin, Sansa Stark, in building an army and together they retake Winterfell from House Bolton, restoring House Stark's dominion over the North with Jon being declared the new King in the North. However, after successfully capturing a wight and presenting it to the Lannisters as proof that the Army of the Dead are real, Jon pledges himself and his army to Daenerys Targaryen, Rhaegar's sister, and steps down as King of the North."
     },
     {
         "name": "Tyrion Lannister",
         "shortcode": "tyrion",
         "actor": "Peter Dinklage",
-        "house": "Lannister",
-        "location": undefined
+        "house":
+        {
+            "name": "Lanister",
+            "seat": "Casterly Rock",
+            "words": "Hear me roar",
+            "phone": 5551231234
+        },
+        "location": "",
+        "bio": " Lord Tyrion Lannister is the youngest child of Lord Tywin Lannister and younger brother of Cersei and Jaime Lannister. A dwarf, he uses his wit and intellect to overcome the prejudice he faces. His abduction by Catelyn Stark for a crime he did not commit serves as one of the catalysts of the War of the Five Kings. After escaping his captors, Tyrion is appointed by his father as acting Hand of the King to Joffrey Baratheon and successfully defends King's Landing against Stannis Baratheon at the Battle of the Blackwater, after which he is stripped of his power, demoted to Master of Coin and eventually framed for Joffrey's murder. After his champion, Oberyn Martell, dies in Tyrion's trial by combat, Tyrion flees to Essos with help from Jaime and Varys after murdering his father."
     },
     {
         "name": "Brienne of Tarth",
         "shortcode": "brienne",
         "actor": "Gwendoline Christie",
-        "house": "Clegane",
-        "location": null
+        "house":
+        {
+            "name": "Tarth",
+            "seat": "Evenfall Hall",
+            "words": "In darkness we rise",
+            "phone": 5551231234
+        },
+        "location": "",
+        "bio": "Brienne is the sole surviving child and heir of Lord Selwyn Tarth of Evenfall Hall, on the island of Tarth, located in the Narrow Sea off the coast of the Stormlands. She is unusually tall and muscular for a woman by Westerosi standards and developed a taste for martial activity as a child. Brienne has grown up to become skilled at arms and dreams of becoming a knight.Brienne's mother died when she was so young that she doesn't remember her.[2] She had some siblings but they all died in childhood. As the sole heir of House Tarth, she posed a fairly promising marriage prospect for men from other noble Houses, but due to her physicality and personality has never seriously pursued a marriage alliance with another House."
     },
     {
         "name": "Eddard Stark",
         "shortcode": "ned-stark",
         "actor": "Sean Bean",
-        "house": "Stark"
+        "house":
+        {
+            "name": "Stark",
+            "seat": "Winterfell",
+            "words": "Winter is coming",
+            "phone": 5551231234
+        },
+        "bio": "Lord Eddard Stark, also known as Ned Stark, was the head of House Stark, the Lord of Winterfell, Lord Paramount and Warden of the North, and later Hand of the King to King Robert I Baratheon. He was the older brother of Benjen, Lyanna and the younger brother of Brandon Stark. He is the father of Robb, Sansa, Arya, Bran and Rickon by his wife, Catelyn Tully, and uncle of Jon Snow, who he raised as his bastard son. He was a dedicated husband and father, a loyal friend and an honorable lord.Eddard's execution and revealing the illegitimacy of Cersei's children was the spark of the War of the Five Kings between Joffrey Baratheon, Robb, Renly Baratheon, Stannis Baratheon and Balon Greyjoy, being posthumously responsible for the involvement of four of the kings in this war."
     },
     {
         "name": "Sandor Clegane",
         "shortcode": "the-hound",
         "actor": "Rory McCann",
-        "house": "Clegane",
-        "location": false
+        "house":
+        {
+            "name": "Clegane",
+            "seat": "Clegane's Keep",
+            "phone": 5551231234
+        },
+        "location": "",
+        "bio": "Sandor Clegane, nicknamed the Hound, is the younger brother of Ser Gregor Clegane and was the personal bodyguard of Prince Joffrey Baratheon. When Joffrey ascended the Iron Throne as King Joffrey I, Sandor was named into his Kingsguard despite not being a knight himself, but deserted from his post at the Battle of the Blackwater. After traveling as a fugitive with Arya Stark and having a close brush with death, he reluctantly travels with the Brotherhood Without Banners in hope of having a greater purpose."
     },
     {
         "name": "Daenerys Targaryen",
         "shortcode": "dany",
         "actor": "Emilia Clarke",
-        "house": "Targaryen",
-        "location": "Mereen"
-    }, ]
+        "house":
+        {
+            "name": "Targaryen",
+            "seat": "Dragonstone",
+            "words": "Fire and blood"
+        },
+        "location": "Mereen",
+        "bio": "Lady Daenerys Targaryen, also known as Dany and Daenerys Stormborn, is the younger sister of Rhaegar Targaryen and Viserys Targaryen, the paternal aunt of Jon Snow, and the youngest child of King Aerys II Targaryen and Queen Rhaella Targaryen, who were both ousted from the Iron Throne during Robert Baratheon's rebellion."
+    }]
 }

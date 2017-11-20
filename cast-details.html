@@ -8,16 +8,15 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body class="page-cast-details">
     <div class="wrapper">
-        <h1>Games of Thrones</h1>
-        <ul class="character-list-container"></ul>
+        <h1>Games of Thrones | Cast Details</h1>
+        <section class="character-list-container"></section>
         <script id="character-template" type="text/x-handlebars-template">
-            {{#each characters}}
-            <li class="character clearfix">
+            <div class="character clearfix">
                 <img src="assets/{{shortcode}}.jpg" alt="">
                 <div class="character-details">
-                    <h2>{{name}}</h2>
+                     <h2>{{name}}</h2>
                     {{formatName name house.seat}}
                     <p>{{formatPhoneNumber house.phone}}</p>
                     <p>Actor: {{actor}}</p>
@@ -31,9 +30,11 @@
                     <p>Whereadouns are unknown</p>
                     {{/unless}}
                 </div>
-                <a href="cast-details.html?id={{@index}}" class="button view-details">View Details &#8674;</a>
-            </li>
-            {{/each}}
+                <a href="index.html" class="button view-details">Back</a>
+            </div>
+            <div class="character-bio-container">
+                <p><strong>Bio: </strong>{{bio}}</p>
+            </div>
         </script>
     </div>
 </body>
